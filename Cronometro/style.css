@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bk-cronometro {
+    color: aliceblue;
+    background-color: #9000ff;
+    height: 100vh;
+    width: 100vw;
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+h1, h2 {
+    font-size: 3em;
+    padding: 10px;
+}
+
+span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 10px;
+    background-color: #9000ff;
+    color: aliceblue;
+    border: solid 1px aliceblue;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+button:hover {
+    color: #9000ff;
+    background-color: aliceblue;
+    border: solid 1px aliceblue;
+}
+
