@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    margin: 10px;
+    padding: 10px;
+    background-color: #343434;
+    border-radius: 0 0 15px 15px;
+    color: #ffffff;
+    min-height: 90vh;
+    width: 70vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+}
+
+.action {
+    width: 8%;
+    color: #ffffff;
+    background-color: #ff2b06;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action:hover {
+    background-color: #34343400;
+}
+
+.inp-task {
+    width: 100%;
+    background-color: #343434;
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    height: 1.8em;
+}
+
+.inp-task::placeholder {
+    color: #898989;
+    font-weight: bold;
+}
+
+
+.inp-task, .action {
+    padding: 5px;
+    margin: 7px;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    background-color: transparent;
+    border: solid 1px #ffffff;
+}
+
+.show-task {
+    background-color: #707070;
+    border-radius: 10px;
+    min-height: 70%;
+    width: 95%;
+    
+}
+
+.list-task li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.btn-container {
+    width: auto;
+    margin: 5px;
+}
+
+ul { 
+   margin: 20px;
+   margin-left: 40px;
+   background-color: #4e4e4e; 
+}
+
+.btn-delete {
+    background-color: #ff2b06;
+}
+
+.btn-delete:hover {
+    background-color: #ff2b06a9;
+}
+
+.btn-done {
+    background-color: #06ff599c;
+   
+}
+
+.btn-done:hover {
+    background-color: #06ff597a;
+}
+
+.btn-delete, .btn-done {
+    margin-top: 5px;
+    margin-right: 3px;
+    border: solid 1px white;
+    cursor: pointer;
+    min-height: 25px;
+    min-width: 30px;
+}
+
+svg {
+    padding: 2px;
+    height: 20px;
+    min-width: 30px;
+    fill: #ffffff;
+}
