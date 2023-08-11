@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background: linear-gradient(to bottom, #000, #1c0035);
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    margin-right: 10px;
+}
+
+.img-container {
+    width: 50%;
+    margin: auto 20px;
+}
+
+.img-container img {
+    border-radius: 2px;
+    max-height: 300px;
+    border: solid 1px #999;
+    object-fit: cover;
+}
+
+.text-container {
+    text-align: start;
+} 
+
+#title-text{ 
+    color: #e100ff;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.text-container h4 {
+    color: #03cae0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.clock-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #383838;
+    width: 60px;
+    padding: 10px;
+}
+
+.numb-date {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.word-date {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 1060px) {
+    .img-container img {
+        max-height: 250px;
+    }
+}
+
+@media screen and (max-width: 904px){
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-content {
+        margin: 10px 140px;
+    }
+
+    .img-container {
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }    
+
+    .img-container img {
+        margin: 20px auto;
+        max-height: 230px;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    .clock-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .img-container img {
+        margin: 20px auto;
+        max-height: 180px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .img-container img {
+        margin: 20px auto;
+        max-height: 150px;
+    }
+
+    .text-container {
+        font-size: 1.1em;
+    }
+}
