@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #101010;
+}
+
+.title-content {
+    font-family: 'Vina Sans', cursive;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    color: #ffff00;
+    background-color: #242424;
+}
+
+.container {
+    color: #fff;
+    background-color: #101010;
+    font-family: 'Vina Sans', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-pontuation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.container-pontuation span {
+    font-size: 2.3em;
+}
+
+.badge {
+    color: #101010;
+    background-color: #ffff00;
+    padding: 0 10px;
+    border-radius: 7px;
+}
+
+.container-pontuation > #user-label {
+    position: absolute;
+    left: -10px;
+    top: 50%;
+}
+
+.container-pontuation > #computer-label {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+}
+
+.output-game {
+    margin-top: 12px;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+.choices {
+    display: flex;
+}
+
+.choice {
+    border: solid 2px #ffff00;
+    border-radius: 10px;
+    margin: 30px 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #242424;
+}
+
+.choice img {
+    max-height: 110px;
+}
+
+.footer {
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+
+#move-computer {
+    max-height: 120px;
+}
+
+@media screen and (max-width: 600px) {
+    .title-content {
+        font-size: 1.1em;
+        width: 100%;
+    }
+
+    .container {
+        justify-content: center;
+    }
+    
+    .choice img {
+        max-height: 70px;
+    }
+
+    #move-computer {
+        max-height: 70px;
+    }
+}
+
+@media screen and (max-width: 300px){
+
+    .choice {
+        margin: 10px 5px;
+    }
+
+    .choice img {
+        max-height: 50px;
+    }
+
+    #move-computer {
+        max-height: 50px;
+    }
+}
