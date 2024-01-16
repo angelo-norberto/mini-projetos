@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 0 30px;
+}
+
+.panel {
+    background-image: url(https://img.freepik.com/free-photo/beautiful-view-tranquil-desert-clear-sky-captured-morocco_181624-8496.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699833600&semt=ais);
+    background-size: cover;
+    object-fit: contain;
+    width: 7%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 7px;
+    overflow: hidden;
+    filter: grayscale(100);
+
+    display: flex;
+    align-items: start;
+    justify-content:flex-start ;
+}
+
+.active {
+    width: 40%;
+    transform: translateY(25px);
+    filter: grayscale(0);
+}
+
+.title {
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-top: 15px;
+}
+
+.t-active {
+    opacity: 1;
+}
+
+.panel h3 {
+    color: #fff;
+    padding: 20px;
+}
+

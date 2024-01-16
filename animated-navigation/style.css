@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0383d9;
+    height: 100vh;
+    overflow: hidden;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav {
+    background-color: #ffff;
+    padding: 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav:hover {
+    width: 350px;
+}
+
+nav ul {
+    display: flex;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.4s linear;
+}
+
+nav:hover ul{
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    outline: none;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+nav ul li a:focus {
+    color: #000;
+}
+
+.icon {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.icon:focus {
+    outline: 0;
+}
+
+.icon .line {
+    background-color: #0383d9;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.5s linear;
+}
+
+.icon:focus {
+    outline: 0;
+}
+
+.icon .line2 {
+    top: auto;
+    bottom: 10px;
+}
+
+nav.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px); 
+}
+nav.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px); 
+}

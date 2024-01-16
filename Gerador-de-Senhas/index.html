@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    
+    <div class="register-container">
+        <div class="register-banner">
+             <div class="register-layer">
+                <h1>Welcome !</h1>
+             </div>
+        </div>
+        <div class="register-form">
+            <h2>Create your account:</h2>
+            <p>Register to use all the functionalities of the site</p>
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Type your name here">
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input type="text" email="email" id="email" placeholder="Type your email here">
+            </div>
+            <p>
+                Want help creating a secure password?<span id="generate-password">Click here.</span>
+            </p>
+            <div id="generated-password">
+                <p>Your password: </p>
+                <h4></h4>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="text" password="password" id="password" placeholder="Type your password here">
+            </div>
+            <div class="form-control">
+                <label for="confirm password">Confirm password</label>
+                <input type="text" Confirm password="confirm password" id="confirm password" placeholder="Confirm password here">
+            </div>
+            <input type="submit" value="Sign Up">
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

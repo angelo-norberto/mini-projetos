@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    font-family: 'Vina Sans', cursive;
+}
+
+.genius-body {
+    height: 400px;
+    width: 400px;
+    border: solid 2px #393939;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.btn {
+    border: solid 10px #000;
+}
+
+.genius-body #g {
+    background-color: #005800;
+    height: 50%;
+    width: 50%;
+    border-radius: 100% 0 0 0;
+}
+.genius-body #r {
+    background-color: #7a0000;
+    height: 50%;
+    width: 50%;
+    border-radius: 0 100% 0 0;
+}
+.genius-body #y {
+    background-color: #9a9a00;
+    height: 50%;
+    width: 50%;
+    border-radius: 0 0 0 100%;
+}
+.genius-body #b {
+    background-color: #001a80;
+    height: 50%;
+    width: 50%;
+    border-radius: 0 0 100% 0;
+}
+
+.menu-game {
+    background-color: #afafaf;
+    border: 20px solid #000;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.play-btn {
+    padding: 5px;
+    margin: 10px;
+    width: 50%;
+    background-color: #404040;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.level {
+    min-height: 20px;
+    width: 50px;
+    background-color: #470000;
+    color: #f95353;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+
+
